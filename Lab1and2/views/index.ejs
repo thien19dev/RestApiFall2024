@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="nav-menu">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/news">News</a>
+      <a href="/categories">Categories</a>
+      <a href="/user">User List</a>
+
+    </div>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <h2>User Information Form</h2>
+
+    <form action="/submit" method="POST">
+      <label for="name">Họ tên:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Số điện thoại:</label><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <h1>Ninh Binh Photo Gallery</h1>
+    <div class="gallery">
+      <!-- Hàng 1 -->
+      <img src="https://c1.wallpaperflare.com/preview/778/132/18/trang-an-bai-dinh-ninh-binh-province-vietnam.jpg" alt="Ninh Binh Photo 1">
+      <img src="https://onevivu.vn/wp-content/uploads/2020/09/Tam-Coc-Ninh-Binh-1-1.jpg" alt="Ninh Binh Photo 2">
+      <img src="https://c1.wallpaperflare.com/preview/348/680/5/trang-an-bai-dinh-ninh-binh-province-landscape.jpg" alt="Ninh Binh Photo 3">
+    </div>
+  </body>
+</html>

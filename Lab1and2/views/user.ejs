@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<div class="nav-menu">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/news">News</a>
+    <a href="/categories">Categories</a>
+    <a href="/user">User List</a>
+</div>
+<h1>Danh sách người dùng</h1>
+
+<ul>
+    <% users.forEach(function(user) { %>
+        <li><strong>ID:</strong> <%= user._id %> - <strong>Name:</strong> <%= user.name %> - <strong>Email:</strong> <%= user.email %> - <strong>Password:</strong> <%= user.password %></li>
+    <% }); %>
+</ul>
+</body>
+</html>
